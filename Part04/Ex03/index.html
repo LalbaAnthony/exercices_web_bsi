@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <title>Accueil - Y'a air Company</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Y'a <span class="outline light">air</span> Company</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="site/contact.html">Contact</a></li>
+                <li><a href="site/download.html">Téléchargement</a></li>
+                <li><a href="site/team.html">Équipe</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section>
+            <h2>Qui sommes-nous ?</h2>
+            <p>Y'a air Company est une entreprise spécialisée dans le gonflement de roues de trains. Nous sommes
+                présents dans 12 pays et avons gonflé plus de 1 000 000 de roues depuis notre création en 2004.</p>
+        </section>
+
+        <section>
+            <h2>Nos clients</h2>
+            <ul class="clients">
+                <li title="Renfe">
+                    <a href="https://www.renfe.com/" target="_blank"><img class="client" src="images/clients/renfe.png" alt="Renfe"></a>
+                </li>
+                <li title="SNCF">
+                    <a href="https://www.sncf.com/" target="_blank"><img class="client" src="images/clients/sncf.png" alt="SNCF"></a>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Y'a air Company. Tous droits réservés.</p>
+    </footer>
+</body>
+
+</html>
+
+<style>
+    .clients {
+        display: flex;
+        justify-content: start;
+        list-style: none;
+        padding: 0;
+        gap: 50px;
+        margin: 0.5em;
+    }
+
+    img.client {
+        width: 100px;
+    }
+</style>

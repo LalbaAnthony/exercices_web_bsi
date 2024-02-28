@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+  <title>Équipe - Y'a air Company</title>
+  <link href="../style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Y'a <span class="outline light">air</span> Company</h1>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Accueil</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="download.html">Téléchargement</a></li>
+        <li><a href="team.html">Équipe</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <secion>
+      <h2>Présentation de l'équipe</h2>
+      <p>Notre équipe est composée de 5 personnes </p>
+    </secion>
+    <section>
+      <h2>Notre équipe</h2>
+      <ul class="team-grid">
+        <li>
+          <img src="../images/team/4.jpg" width="200px" alt="Mme Lefebvre">
+          <p>M. Lefebvre</p>
+          <p class="primary">PDG</p>
+        </li>
+        <li>
+          <img src="../images/team/1.jpg" width="200px" alt="M. Dupont">
+          <p>Mme Dupont</p>
+          <p class="primary">Gonfleuse</p>
+        </li>
+        <li>
+          <img src="../images/team/2.jpg" width="200px" alt="Mme Durand">
+          <p>Mme Durand</p>
+          <p class="primary">Gonfleuse</p>
+        </li>
+        <li>
+          <img src="../images/team/3.jpg" width="200px" alt="M. Martin">
+          <p>M. Martin</p>
+          <p class="primary">Gonfleur</p>
+        </li>
+        <li>
+          <img src="../images/team/5.jpg" width="200px" alt="M. Leroy">
+          <p>Mme Leroy</p>
+          <p class="primary">Secretaire</p>
+        </li>
+      </ul>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Y'a air Company. Tous droits réservés.</p>
+  </footer>
+</body>
+
+</html>
+
+<style>
+  /* CINEMA SCREEN */
+  @media (min-width: 1600px) {
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 4rem;
+    }
+  }
+
+  /* DESKTOP */
+  @media (min-width: 1024px) and (max-width: 1599px) {
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 3rem;
+    }
+  }
+
+  /* TABLET */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 2rem;
+    }
+  }
+
+  /* MOBILE */
+  @media (max-width: 767px) {
+    .team-grid {
+      display: row;
+      grid-template-rows: repeat(1, 1fr);
+      row-gap: 2rem;
+    }
+  }
+
+  .team-grid {
+    margin: 3rem 0;
+  }
+
+  .team-grid li {
+    text-align: center;
+  }
+
+  .team-grid img {
+    /* width: 100%; */
+    border-radius: 50%;
+    margin-bottom: 1rem;
+  }
+</style>
